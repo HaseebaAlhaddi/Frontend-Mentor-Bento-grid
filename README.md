@@ -18,8 +18,8 @@
 
 ### Links
 
-- Solution URL:(https://github.com/HaseebaAlhaddi/Frontend-Mentor-Huddle-landing-page-with-single-introductory-section)
-- Live Site URL:(https://haseebaalhaddi.github.io/Frontend-Mentor-Huddle-landing-page-with-single-introductory-section/)
+- Solution URL:(https://github.com/HaseebaAlhaddi/Frontend-Mentor-Bento-grid)
+- Live Site URL:(https://haseebaalhaddi.github.io/Frontend-Mentor-Bento-grid/)
 
 ## My process
 
