@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+html{
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "DM Sans", serif;
+    padding: 5% 10%;
+    background-color: hsl(0, 0%, 90%);
+}
+main{
+    display: grid;
+    grid-template-areas: 'c7 c1 c1 c4' 
+    'c7 c2 c3 c4' 
+    'c8 c2 c3 c4'
+    'c8 c6 c5 c5';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30% 20% 20% 30%;
+    gap: 20px;
+    width: 90%;
+    height: 90vh;
+}
+main div{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+main div img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+main div:nth-child(1){
+    grid-area:c1 ;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+main div:nth-child(2){
+    grid-area: c2;
+    background-color:hsl(0, 0%, 100%) ;
+    color: hsl(0, 0%, 7%);
+}
+main div:nth-child(3){
+    grid-area: c3;
+    background-color: hsl(39, 100%, 71%);
+    color: hsl(0, 0%, 7%);
+}
+main div:nth-child(4){
+    grid-area: c4;
+    background-color: hsl(254, 88%, 90%);
+    color: hsl(0, 0%, 7%);
+}
+main div:nth-child(5){
+    grid-area: c5;
+    background-color:hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+}
+main div:nth-child(6){
+    grid-area: c6;
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 7%);
+}
+main div:nth-child(7){
+    grid-area: c7;
+    background-color:hsl(31, 66%, 93%);
+    color: hsl(0, 0%, 7%);
+}
+main div:nth-child(8){
+    grid-area: c8;
+    background-color:hsl(39, 100%, 71%);
+    color: hsl(0, 0%, 7%);
+}
+main div h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1;
+}
+main div h1 span{
+    color: hsl(39, 100%, 71%);
+}
+main div:nth-child(1) p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+main div:nth-child(1) img{
+    width: 50%;
+    margin: 0 auto;
+}
+main div:nth-child(1) p{
+    margin-top: 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+main div:nth-child(5) h2{
+    margin-top: 40px;
+}
+main div:nth-child(6) h2{
+    font-size: 3rem;
+}
+main div:nth-child(7) h2{
+    margin-top: 20%;
+}
+main div:nth-child(7) h2 span{
+    color: hsl(256, 67%, 59%);
+}
+main div:nth-child(8) img{
+    margin-top: 40px;
+}
+@media (max-width: 768px){
+    body{
+        padding: 5% 5%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    main div{
+        overflow:visible ;
+    }
+    main div:nth-child(1) img{
+        width: 70%;
+    }
+    main div:nth-child(5) h2{
+        margin-top: 20px;
+    }
+    main div:nth-child(7) h2{
+        margin-top: 10%;
+    }
+    main div:nth-child(5){
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main div:nth-child(5) img{
+        width: 70%;
+    }
+    main div:nth-child(5) h2{
+        width: 70%;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        padding: 5% 5%;
+    }
+    main{
+        display: grid;
+        grid-template-areas: 'c7 c1 ' 
+        'c4 c8' 
+        'c2 c3'
+        'c5 c6';
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(4, 1fr) ;
+        gap: 20px;
+        width: 100%;
+        height: 90vh;
+    }
+    main div{
+        overflow:visible ;
+        width: 100%;
+    }
+    main div:nth-child(5){
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
